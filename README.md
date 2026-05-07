@@ -11,7 +11,7 @@ Give the skill a brand guide PDF, a deck, a Figma file with logos and assets, or
 1. Analyze the source materials and extract or infer the brand system
 2. Detect the source's own structure (or fall back to standard sections)
 3. Ask you the blocking setup questions one at a time
-4. Create color variables, paint styles, and text styles in Figma
+4. Create color variables, color styles, and text styles in Figma
 5. Generate full Brand Book pages with editorial left/right slide layouts
 6. Run visual QA after every pass with screenshots
 7. Support iterative refinement — fix individual slides, condense overlapping pages, create comparison variants
