@@ -136,7 +136,7 @@ Use the smallest workflow that fits the request.
 4. Summarize findings in plain language
 5. Ask blocking questions one at a time (file, color implementation, layout, assets)
 6. Set up tokens and styles in Figma
-7. Generate brand-book pages or sections
+7. Generate brand-book pages or sections — **apply Guideline Copy Voice self-check before every text creation**
 8. Run visual QA
 9. Iterate based on feedback
 10. Return a structured map of created IDs
@@ -283,6 +283,67 @@ When the source is incomplete:
 - Don't pretend inferred rules came from a formal guide
 
 Do not write generic filler copy if the live assets can teach the rule visually.
+
+## Guideline Copy Voice
+
+Write directively, not analytically.
+
+Brand book copy is for a practitioner *applying* the brand — not a reviewer *assessing* a file. Every sentence should tell the reader what to do or what is true about the brand, not describe what the file contains or how the value was derived.
+
+This applies to slide titles, intro paragraphs, body copy, bullet rules, and captions.
+
+### Phrase patterns to avoid
+
+| Analytical (don't write) | Directive (write instead) |
+|---|---|
+| "The file already contains..." | State the element as a fact, then say how to use it |
+| "This spread/slide/page shows..." | State the rule directly — the example speaks for itself |
+| "The live file/board/deck..." | Remove the artifact reference entirely |
+| "The lesson here is..." | Just state the lesson |
+| "The current system is..." | Describe what the thing does, then tell them to use it that way |
+| "Because the source material is..." | Delete — don't expose the making-of in the final doc |
+| "It works because..." | State the usage principle, not why the choice was made |
+| "About the logo system" (as a slide title) | "Logo & Wordmark" — declarative, not descriptive |
+
+### Copy structure model
+
+Open with the brand subject + what it does. Follow with the usage direction. Close with the governing rule.
+
+**Good:**
+> Cheddar's identity is built from three mark types: the wordmark, the logo mark, and the app icon. Together they cover every placement context. Match the mark to the scale and purpose of each application.
+
+**Bad:**
+> The file already contains a simple three-part identity system: the wordmark, the logo mark, and the app icon. Together they cover compact app usage, standalone brand marks, and longer branded placements. Because the source material is not a formal identity guide, the structural rules on this page are inferred from how the assets are already used in the live file.
+
+### Slide titles
+
+Titles should be declarative brand subjects, not descriptions of the slide's purpose.
+
+- "Color" not "About Color"
+- "Logo & Wordmark" not "Identity System Overview"
+- "Typography on Color" not "How to Pair Type with Backgrounds"
+- "What to Avoid" not "Common Mistakes Section"
+
+### Inferred vs explicit rules
+
+When a rule is inferred (you derived it from observed patterns), still phrase it directively — just soften the absoluteness slightly.
+
+- Explicit: "Headlines must always be set in Inter Bold."
+- Inferred: "Headlines are set in Inter Bold."
+
+Never write: "We inferred that headlines should be Inter Bold based on the source."
+
+Don't expose the making-of in the final document. The reader doesn't care how the rule was derived — they care what the rule is.
+
+### Self-check gate (apply before every text creation)
+
+Before calling `use_figma` to create any text content, run this check on the copy you're about to write:
+
+1. Does any sentence reference the document itself ("this page", "this spread", "the file", "the source", "this slide")?
+2. Does any sentence explain how the value was derived rather than what it is?
+3. Does any sentence read like a designer reviewing the file rather than a practitioner applying the brand?
+
+If yes to any of these, rewrite first. The rewritten copy should be shorter, more directive, and have no meta-references.
 
 ## Figma-First Inspection
 
